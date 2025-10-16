@@ -8,12 +8,12 @@ import net.runelite.client.config.ConfigItem;
 public interface HyftarClanEventsConfig extends Config
 {
 	@ConfigItem(
-		keyName = "greeting",
-		name = "Welcome Greeting",
-		description = "The message to show to the user when they login"
+		keyName = "event_config",
+		name = "Event configuration",
+		description = "Paste your event's configuration here (copied from the website)"
 	)
-	default String greeting()
+	default String eventConfiguration()
 	{
-		return "Hello";
+		return "";
 	}
 }
